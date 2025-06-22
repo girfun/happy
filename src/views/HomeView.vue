@@ -1,17 +1,17 @@
 <template>
   <div>
-    <div class="block block__first">
+    <div class="block block__first" style="display: flex; flex-direction: column; justify-content: space-around">
       <div style="padding: 20px 40px">
-        <img src="/chulpan.jpeg" class="chulpan" alt="">
+        <img src="/ramazan.jpeg" class="ramazan" alt="">
       </div>
 
-      <div style="display: flex; align-items: center; justify-content: center; font-size: 44px">
+      <div style="display: flex; align-items: center; justify-content: center; font-size: 44px; font-family: Caveat">
         Р + Ч =
         <img src="/heart.png" class="heart" alt="">
       </div>
 
       <div style="padding: 20px 40px; display: flex; justify-content: flex-end">
-        <img src="/ramazan.jpeg" class="ramazan" alt="">
+        <img src="/chulpan.jpeg" class="chulpan" alt="">
       </div>
     </div>
 
@@ -19,23 +19,31 @@
       <div class="img second-image"/>
 
       <div class="text">
-        <span style="font-size: 18px">Узнали нас?</span>
-        <br><br>
-        Время летит незаметно — и вот мы повзрослели и приняли решение, что готовы связать наши жизни вместе!
-        <br><br>
-        С большой радостью приглашаем вас на нашу свадьбу!
-        Будем счастливы, если вы разделите с нами этот особенный день.
+        <div style="font-size: 28px; text-align: center; font-family: Amatic SC, sans-serif; margin-bottom: 20px">Узнали нас?</div>
+
+        <div style="font-size: 28px; text-align: center; font-family: Caveat; letter-spacing: 2px; line-height: 30px;">
+          Время летит незаметно — и вот мы повзрослели и приняли решение, что готовы связать наши жизни вместе!
+        </div>
+        <br>
+        <div style="font-size: 28px; text-align: center; font-family: Caveat; letter-spacing: 2px; line-height: 30px;">
+          С большой радостью <br>
+          приглашаем вас на нашу свадьбу! <br>
+          Будем счастливы, если вы разделите с нами этот особенный день.
+        </div>
       </div>
     </div>
 
     <div class="block__third">
-      <div style="display: flex; justify-content: center; padding: 30px 0; font-size: 30px">
-        Свадьба состоится
-        <br>
-        23 августа в 16:30
+      <div style="display: flex; justify-content: center; padding: 30px 0; font-size: 30px;flex-direction: column;align-items: center;">
+        <div style="font-family: EB Garamond;">Свадьба состоится</div>
+        <div style="font-family: Caveat">23 августа в 16:30</div>
       </div>
 
       <img src="/calendar.png" alt="" style="width: 360px">
+
+      <div style="margin: 50px 0 30px; text-align: center; font-size: 14px;">
+        ИНФОРМАЦИЯ ГДЕ СОСТОИТСЯ СВАДЬБА
+      </div>
 
       <div style="display: flex; justify-content: center; padding: 30px 0; font-size: 30px">
         Тайминг
@@ -44,7 +52,89 @@
       <TimeBlock
           title="16:30 Фуршет"
           subtitle="знакомства и общение"
+          img-src="/1.png"
       />
+
+      <TimeBlock
+          title="17:00 Выездная регистрация"
+          subtitle="момент наших клятв"
+          img-src="/32.png"
+      />
+
+      <TimeBlock
+          title="17:30 Банкет"
+          subtitle="танца веселье и много любви"
+          img-src="/42.png"
+      />
+
+      <TimeBlock
+          title="21:00 Торт"
+          subtitle="сладкая пауза"
+          img-src="/54.png"
+      />
+
+      <TimeBlock
+          title="21:00 Окончание вечера"
+          subtitle="даже такой чудесный день может закончиться"
+          img-src="/05.png"
+      />
+
+      <div class="" style="position: relative">
+        <div style="position: absolute; top: 15px; padding: 0 15px; color: #34433c">
+          <div style="text-align: center; margin-bottom: 15px; font-size: 22px">
+            Дресс-код
+          </div>
+
+          <div style="text-align: center; font-size: 15px">
+            Мы старались сделать праздник красивыми будем рады,
+            если вы поддержите цветовую гамму нашей свадьбы
+          </div>
+        </div>
+
+        <img src="/121.png" alt="" style="width: 100%">
+      </div>
+
+      <div style="font-family: EB Garamond; padding: 0 12px">
+        <div style="text-align: center; margin: 30px 0 20px; font-size: 26px">
+          Пожелания
+        </div>
+
+        <div style="text-align: center">
+          Будем признательны, если вы поддержите наше желание обойтись без криков 'Горько!'
+          Пусть поцелуи будут только по велению сердца
+        </div>
+
+        <div style="display: flex; justify-content: center; margin: 12px 0">
+          <img src="/11.png" alt="" style="width: 80px">
+        </div>
+
+        <div style="text-align: center">
+          С любовью и уважением просим оставить детей дома, чтобы вы могли полностью насладиться нашим днём, так как территория ресторана не предполагает развлечений и посадочный мест для детей
+          <br>
+          18+
+          <br>
+          <br>
+          <br>
+          <div style="text-align: center;">
+            Все видео и фото со свадьбы будут размещены в нашем телеграм канале,
+            там же вы можете поделиться своими фотографиями и видео — давайте соберём историю этого дня вместе
+          </div>
+
+          <div style="display: flex; justify-content: space-around; align-items: center; margin: 30px 0">
+            <img src="/41.png" alt="" style="width: 60px; height: 60px">
+            <img src="/22.png" alt="" style="width: 100px; height: 100px">
+            <img src="/53.png" alt="" style="width: 60px; height: 60px">
+          </div>
+        </div>
+      </div>
+
+      <div style="position:relative; font-family: Caveat">
+        <div style="position: absolute;top: 50px; left: 50%;transform: translateX(-50%); font-size: 28px;">
+          <div style="text-align: center">С любовью,</div>
+          <div style="text-align: center">Рамазан и Чулпан</div>
+        </div>
+        <img src="/3131.png" alt="" style="width: 100%; height: 100%">
+      </div>
 
     </div>
 
@@ -87,45 +177,23 @@
 </template>
 
 <script setup>
-import Countdown from "@/components/Countdown.vue";
 import { onMounted } from 'vue'
-import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+import Countdown from "@/components/Countdown.vue";
 import TimeBlock from "@/components/TimeBlock.vue";
 
-gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
-  gsap.fromTo(
-      '.second-image',
-      { filter: 'grayscale(100%)' }, // старт: ЧБ
-      {
-        filter: 'grayscale(0%)',    // конец: цвет
-        duration: 2,
-        ease: 'power2.inOut',
-        scrollTrigger: {
-          trigger: '.block__second',
-          start: 'top 80%',
-          toggleActions: 'play none none none'
-        }
-      }
-  )
 })
 </script>
 
-<style>
+<style lang="scss">
 body {
   max-width: 500px;
   margin: 0 auto;
-  font-family: "Marck Script", cursive;
 }
 
 .block {
   height: 100vh;
-}
-
-.block__first {
-  background-color: antiquewhite;
 }
 
 .block__first .chulpan {
@@ -142,14 +210,14 @@ body {
 
 
 .block__second {
-  text-align: center;
   display: flex;
   align-items: center;
   position: relative;
 }
 .block__second .text {
-  padding: 30px;
+  padding: 30px 12px;
   line-height: 25px;
+  margin-top: 80%;
 }
 
 .block__second .img {

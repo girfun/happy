@@ -7,11 +7,11 @@ defineProps({
 </script>
 
 <template>
-  <div class="time-block">
+  <div class="time-block" style="display: flex;align-items: center; margin-bottom: 30px">
     <div>
-      <img :src="imgSrc" alt="">
+      <img :src="imgSrc" alt="" style="width: 100px;">
     </div>
-    <div>
+    <div style="text-align: center; flex-grow: 1">
       {{ title }}
 
       <div class="time-block__br"></div>
@@ -23,5 +23,9 @@ defineProps({
 </template>
 
 <style scoped>
-
+.time-block__br {
+  height: 1px;
+  background-color: black;
+  margin: 15px 10px;
+}
 </style>
