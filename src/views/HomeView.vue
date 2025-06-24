@@ -78,7 +78,7 @@
       </div>
 
       <!-- Тайминг -->
-      <h2 class="section-title timing-title">Тайминг</h2>
+      <div class="section-title timing-title">Тайминг</div>
 
       <TimeBlock
           title="16:30 Фуршет"
@@ -124,7 +124,7 @@
 
       <!-- Пожелания -->
       <div class="wishes">
-        <h2 class="section-title">Пожелания</h2>
+        <div class="section-title">Пожелания</div>
 
         <p class="paragraph">
           Будем признательны, если вы поддержите наше желание обойтись без криков "Горько!"
@@ -158,7 +158,7 @@
               target="_blank"
               style="filter: grayscale(100%);"
           >
-            Либо перейти по ссылки →
+            ссылка на телеграм канал →
           </a>
         </div>
       </div>
@@ -371,6 +371,7 @@ onMounted(() => {
   font-size: 30px;
   padding: 30px 0;
   text-align: center;
+  font-family: EB Garamond;
 }
 
 /* Дресс-код */
@@ -396,6 +397,10 @@ onMounted(() => {
   font-family: EB Garamond;
   padding: 0 12px;
   margin-top: 40px;
+
+  .section-title {
+    font-family: EB Garamond;
+  }
 }
 
 .heart-image {
