@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
+console.log(process.env.NODE_ENV === 'production' ? '/happy/' : '/')
 export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? '/happy/' : '/',
   plugins: [
@@ -16,4 +17,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  build: {
+    assetsInlineLimit: 0, // Увеличьте или уменьшите (0 = отключить встраивание)
+  }
 })
