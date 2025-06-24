@@ -4,15 +4,15 @@
     <section class="hero-section">
       <div class="photos-container">
         <transition name="slide-left">
-          <img src="/ramazan.jpeg" class="photo groom" alt="Рамазан" v-if="showPhotos">
+          <img src="@/assets/ramazan.jpeg" class="photo groom" alt="Рамазан" v-if="showPhotos">
         </transition>
 
         <div class="heart-equation">
-          Р + Ч = <img src="/heart.png" class="heart-icon" alt="Сердце">
+          Р + Ч = <img src="@/assets/heart.png" class="heart-icon" alt="Сердце">
         </div>
 
         <transition name="slide-right">
-          <img src="/chulpan.jpeg" class="photo bride" alt="Чулпан" v-if="showPhotos">
+          <img src="@/assets/chulpan.jpeg" class="photo bride" alt="Чулпан" v-if="showPhotos">
         </transition>
       </div>
     </section>
@@ -46,7 +46,7 @@
 
       <!-- Календарь -->
       <div class="calendar-image">
-        <img src="/calendar.png" alt="Календарь">
+        <img src="@/assets/calendar.png" alt="Календарь">
       </div>
 
       <!-- Место проведения -->
@@ -119,7 +119,7 @@
             если вы поддержите цветовую гамму нашей свадьбы
           </p>
         </div>
-        <img src="/121.png" alt="Цветовая палитра">
+        <img src="@/assets/121.png" alt="Цветовая палитра">
       </div>
 
       <!-- Пожелания -->
@@ -132,7 +132,7 @@
         </p>
 
         <div class="heart-image">
-          <img src="/11.png" alt="Сердце">
+          <img src="@/assets/11.png" alt="Сердце">
         </div>
 
         <p class="paragraph">
@@ -147,9 +147,9 @@
         </p>
 
         <div class="social-icons">
-          <img src="/41.png" alt="Иконка 1">
-          <img src="/22.png" alt="QR-код">
-          <img src="/53.png" alt="Иконка 2">
+          <img src="@/assets/41.png" alt="Иконка 1">
+          <img src="@/assets/22.png" alt="QR-код">
+          <img src="@/assets/53.png" alt="Иконка 2">
         </div>
 
         <div style="text-align: center">
@@ -169,7 +169,7 @@
           <div>С любовью,</div>
           <div>Рамазан и Чулпан</div>
         </div>
-        <img src="/3131.png" alt="Фоновое изображение">
+        <img src="@/assets/3131.png" alt="Фоновое изображение">
       </div>
     </section>
   </div>
@@ -291,7 +291,7 @@ onMounted(() => {
 .background-image {
   position: absolute;
   inset: 0;
-  background-image: url("/backdrop.jpeg");
+  background-image: url("@/assets/backdrop.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(100%);
