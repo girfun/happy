@@ -3,13 +3,17 @@
     <!-- Первый блок с фотографиями -->
     <section class="hero-section">
       <div class="photos-container">
-        <img src="/ramazan.jpeg" class="photo groom" alt="Рамазан">
+        <transition name="slide-left">
+          <img src="/ramazan.jpeg" class="photo groom" alt="Рамазан" v-if="showPhotos">
+        </transition>
 
         <div class="heart-equation">
           Р + Ч = <img src="/heart.png" class="heart-icon" alt="Сердце">
         </div>
 
-        <img src="/chulpan.jpeg" class="photo bride" alt="Чулпан">
+        <transition name="slide-right">
+          <img src="/chulpan.jpeg" class="photo bride" alt="Чулпан" v-if="showPhotos">
+        </transition>
       </div>
     </section>
 
@@ -21,13 +25,13 @@
         <h2 class="section-title">Узнали нас?</h2>
 
         <p class="paragraph">
-          Время летит незаметно — и вот мы повзрослели и приняли решение, что готовы связать наши жизни вместе!
+          Время летит незаметно — и вот мы повзрослели и приняли решение, что готовы связать наши жизни вместе
         </p>
 
         <p class="paragraph">
           С большой радостью <br>
           приглашаем вас на нашу свадьбу! <br>
-          Будем счастливы, если вы разделите с нами этот особенный день.
+          Будем счастливы, если вы разделите с нами этот особенный день
         </p>
       </div>
     </section>
@@ -90,7 +94,7 @@
 
       <TimeBlock
           title="17:30 Банкет"
-          subtitle="танца веселье и много любви"
+          subtitle="танцы веселье и много любви"
           img-src="/42.png"
       />
 
@@ -111,7 +115,7 @@
         <div class="dress-code-content">
           <h2 class="section-title" style="margin-top: 10px">Дресс-код</h2>
           <p class="dress-code-text">
-            Мы старались сделать праздник красивыми будем рады,
+            Мы старались сделать праздник красивым и будем рады,
             если вы поддержите цветовую гамму нашей свадьбы
           </p>
         </div>
@@ -172,15 +176,48 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import TimeBlock from "@/components/TimeBlock.vue";
 
+const showPhotos = ref(false);
+
 onMounted(() => {
-  // Инициализация при необходимости
+  // Запускаем анимацию после монтирования компонента
+  setTimeout(() => {
+    showPhotos.value = true;
+  }, 300);
 })
 </script>
 
 <style lang="scss" scoped>
+
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: all 1s ease;
+}
+
+.slide-left-enter-from {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-left-enter-to {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-right-enter-from {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-right-enter-to {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .wedding-invitation {
   max-width: 500px;
   margin: 0 auto;
